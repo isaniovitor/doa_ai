@@ -1,0 +1,3 @@
+[submodule "backend/DOA_AI-api"]
+	path = backend/DOA_AI-api
+	url = https://github.com/ewaldojunior/DOA_AI-api.git
