@@ -35,8 +35,6 @@ Operações implementadas para cada entidade
 | User | X |    |  |  |
 
 ## Rotas da API REST utilizadas
-## Rotas da API REST utilizadas
-
 
 ### Login
 | Método HTTP | URL |
