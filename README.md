@@ -22,11 +22,11 @@ Strapi: O Strapi é um Framework de Gerenciamento de Conteúdo (CMF), que nos of
 - Usuário não autenticado
 - Usuário autenticado
 
-## Entidades, Tabelas ou ColeÃ§Ãµes utilizadas
+## Entidades, Tabelas ou Coleções utilizadas
 
-- Nome das tabelas (bancos sql) ou coleÃ§Ãµes (bancos nosql) utilizadas
+- Nome das tabelas (bancos sql) ou coleções (bancos nosql) utilizadas
 
-OperaÃ§Ãµes implementadas para cada entidade
+Operações implementadas para cada entidade
 
 | Entidade| Create | Read | Update | Delete |
 | --- | --- | --- | --- | --- |
