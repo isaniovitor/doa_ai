@@ -1,7 +1,5 @@
 import { defineStore } from "pinia";
 import api from "../services/api";
-import { v4 as uuid } from "uuid";
-import Cookie from "js-cookie";
 
 export interface User {
   id: number;
@@ -14,14 +12,6 @@ export interface User {
 interface State {
   user: User;
 }
-
-// const cookieName = "xbcAa-vG.HzbSh5.";
-// const encryptionToken = Cookie.get(cookieName) || uuid();
-// Cookie.set(cookieName, encryptionToken, { secure: true, expires: 180 });
-// const safeLocalStorage = new SafeLocalStorageService(
-//   window.localStorage,
-//   encryptionToken
-// );
 
 const token: any = "";
 

@@ -67,8 +67,6 @@
 <script lang="ts">
 import { userStore } from "@/stores/user";
 import { computed, onBeforeMount } from "@vue/composition-api";
-import Vue from "vue";
-import useRouter from "vue-router";
 import { donationStore } from "@/stores/donation";
 
 export default {

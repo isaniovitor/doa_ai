@@ -56,7 +56,7 @@
   </v-container>
 </template>
 
-<script lang="ts">
+<script>
 import { validationMixin } from "vuelidate";
 import { required } from "vuelidate/lib/validators";
 import { donationStore } from "@/stores/donation";

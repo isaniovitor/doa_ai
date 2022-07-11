@@ -80,7 +80,6 @@ export default Vue.extend({
     identifier: "",
     password: "",
     store: userStore(),
-    // checkbox: false,
   }),
 
   validations: {

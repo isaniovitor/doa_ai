@@ -11,7 +11,6 @@
 <script>
 import { computed, onBeforeMount } from "@vue/composition-api";
 import Vue from "vue";
-import useRouter from "vue-router";
 import { donationStore } from "../stores/donation";
 import Product from "./Product.vue";
 import { useRoute } from "vue2-helpers/vue-router";
@@ -34,8 +33,6 @@ export default Vue.extend({
     const store = donationStore();
     let donations;
     let canEdit = false;
-
-    const userLiked = computed(() => store.currentUserLiked);
 
     switch (route?.fullPath) {
       case "/userLiked":

@@ -1,5 +1,4 @@
 <template>
-  <!-- <router-view> -->
   <v-container>
     <v-card class="main elevation-6">
       <v-row class="main">
@@ -81,16 +80,12 @@
       </v-row>
     </v-card>
   </v-container>
-  <!-- </router-view> -->
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import { validationMixin } from "vuelidate";
 import { required, minLength, email } from "vuelidate/lib/validators";
-
-import Header from "@/components/global/Header.vue";
-import Footer from "@/components/global/Footer.vue";
 import { userStore } from "@/stores/user";
 
 export default Vue.extend({

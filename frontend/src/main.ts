@@ -7,8 +7,6 @@ import "vue-toastification/dist/index.css";
 import { createPinia, PiniaVuePlugin } from "pinia";
 import VueGeolocation from "vue-browser-geolocation";
 import * as VueGoogleMaps from "vue2-google-maps";
-import { userStore } from "./stores/user";
-import { useRouter } from "vue2-helpers/vue-router";
 
 Vue.config.productionTip = false;
 Vue.use(VueGeolocation);

@@ -1,28 +1,5 @@
 <template>
   <div>
-    <!-- <div
-      style="
-        max-width: 800px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      "
-    >
-      <div>
-        <h1>Your coordinates:</h1>
-        <p>
-          {{ donation.attributes.latitude }} Latitude,
-          {{ donation.attributes.longitude }} Longitude 
-        </p>
-      </div>
-      <div>
-        <h1>Map coordinates:</h1>
-        <p>
-          {{ mapCoordinates.lat }} Latitude, {{ mapCoordinates.lng }} Longitude
-        </p>
-      </div>
-    </div> -->
     <GmapMap
       :center="myCoordinates"
       :zoom="zoom"
@@ -30,14 +7,7 @@
       ref="mapRef"
       @dragend="handleDrag"
     >
-      <!-- v-for="(m, index) in markers" -->
-      <!-- @click="center = myCoordinates" -->
-
       <div v-for="(donation, i) in donations" :key="i">
-        <!-- <router-link
-          @mouseover="showByIndex = 2"
-          @mouseout="showByIndex = null"
-        > -->
         <GmapMarker
           :key="i"
           :position="{
@@ -63,7 +33,6 @@
             </div>
           </gmap-info-window>
         </GmapMarker>
-        <!-- </router-link> -->
       </div>
     </GmapMap>
   </div>
@@ -149,6 +118,13 @@ export default {
 .gm-style-iw-d {
   overflow-y: hidden !important;
   overflow-x: scroll !important;
+}
+.gm-style-iw-d div {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important;
 }
 .gm-style-iw.gm-style-iw-c {
   padding: 0 !important;
